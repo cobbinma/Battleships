@@ -95,9 +95,9 @@ public class Grid {
 	//method is used to create 3 ships of different length in
 	// random positions
 	public static void placeShips(Grid newGrid) {
-		createShip(newGrid, 4, 3);//long ship
-		createShip(newGrid, 3, 4);
-		createShip(newGrid, 3, 5);
+		createShip(newGrid, 5, 3);//long ship
+		createShip(newGrid, 4, 4);
+		createShip(newGrid, 4, 5);
 	}
 
 	//used to create a ship of given length of given length
