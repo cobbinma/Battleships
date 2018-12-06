@@ -70,7 +70,7 @@ public class Grid {
 				System.out.println("SHIP SUNK!");
 			}
 			hits++;
-			if (hits == 10) {
+			if (hits == 13) {
 				win = true;//no ships remain
 			}
 		} else if (newGrid.playerArray[y][x] == 0) {
