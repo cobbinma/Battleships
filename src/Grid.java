@@ -70,7 +70,7 @@ public class Grid {
 				System.out.println("SHIP SUNK!");
 			}
 			hits++;
-			if (hits == 13) {
+			if (hits == 10) {
 				win = true;//no ships remain
 			}
 		} else if (newGrid.playerArray[y][x] == 0) {
@@ -106,22 +106,22 @@ public class Grid {
 		int x = (int) (Math.random() * 10);//random coordinates generated
 		int y = (int) (Math.random() * 10);
 
-		if (sideways && x > 6) {
-			x = 6;//make sure ship does not go off grid
+		if (sideways && x > 5) {
+			x = 5;//make sure ship does not go off grid
 		}
-		if (!sideways && y > 6) {
-			y = 6;
+		if (!sideways && y > 5) {
+			y = 5;
 		}
 
 		while (checkGridForShip(newGrid, sideways, x, y, length)) {
 			x = (int) (Math.random() * 10);//if another ships overlaps
 			y = (int) (Math.random() * 10);//another position is generated
 
-			if (sideways && x > 6) {
-				x = 6;//make sure ship does not go off grid
+			if (sideways && x > 5) {
+				x = 5;//make sure ship does not go off grid
 			}
-			if (!sideways && y > 6) {
-				y = 6;
+			if (!sideways && y > 5) {
+				y = 5;
 			}
 		}
 
